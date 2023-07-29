@@ -1,23 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+
+const Header = () => {
+  return (
+    <div className='header'>
+      <div className='logo-container'>
+        <img className="logo" src="https://i.pinimg.com/originals/02/fd/5c/02fd5cc15841730936c0c5c555dae3a9.png" alt="" />
+      </div>
+      <div className='nav-items'>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+const RestaurantCard = () => {
+  return (
+    <div className='res-card'>
+      <img className='res-logo' src="https://khni.kerry.com/wp-content/uploads/2019/02/Restaurant-meal.jpg" alt="Loading" />
+      <h3>Food & Foods</h3>
+      <h4>North, South Indian</h4>
+      <h4>4.5 stars</h4>
+      <h4>30 minutes</h4>
+    </div>
+  )
+}
+
+const Body = () => {
+  return (
+    <div className='body'>
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard />
+      </div>
+    </div >
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Body />
     </div>
   );
 }

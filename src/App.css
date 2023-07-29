@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  padding: 0px 60px;
+}
+
+.nav-items>ul {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.nav-items>ul>li {
+  padding: 10px 10px 0px 10px;
+  margin: 10px;
+}
+
+/* Restaurant card */
+.body {
+  padding: 0px 60px;
+}
+
+.res-card {
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.res-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.res-card>h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px;
 }
