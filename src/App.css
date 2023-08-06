@@ -61,4 +61,10 @@
   font-weight: 400;
   font-size: 14px;
   margin: 10px;
+  color: rgb(98, 18, 18);
+}
+
+.filter-btn {
+  margin: 15px;
+  cursor: pointer;
 }
