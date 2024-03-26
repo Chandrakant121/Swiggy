@@ -8,7 +8,8 @@ const Body = () => {
     const [list, setLists] = useState(lists)
 
     const filterData = () => {
-        const filteredList = lists.filter((res) => { return res.rating > 4 })
+        console.log(list)
+        const filteredList = lists.filter((res) => { return res.info.avgRating > 4 })
         setLists(filteredList)
     }
 
@@ -21,7 +22,7 @@ const Body = () => {
             <div className="res-container">
                 {
                     list.map((restaurant) => {
-                        return <RestaurantCard key={list.id} resData={restaurant} />
+                        return <RestaurantCard key={restaurant.info.id} resData={restaurant} />
                     })
                 }
             </div>
