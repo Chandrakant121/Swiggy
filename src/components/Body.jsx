@@ -8,7 +8,6 @@ const Body = () => {
     const [list, setLists] = useState(lists)
 
     const filterData = () => {
-        console.log(list)
         const filteredList = lists.filter((res) => { return res.info.avgRating > 4 })
         setLists(filteredList)
     }

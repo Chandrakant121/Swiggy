@@ -7,6 +7,7 @@
 
 .logo {
   width: 120px;
+  cursor: pointer;
 }
 
 .header {
@@ -23,16 +24,18 @@
 .nav-items>ul>li {
   padding: 10px 10px 0px 10px;
   margin: 10px;
+  cursor: pointer;
 }
 
 /* Restaurant card */
 .body {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .res-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .res-card {
@@ -41,6 +44,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 20px;
   cursor: pointer;
+  margin: 10px;
 }
 
 
@@ -67,4 +71,6 @@
 .filter-btn {
   margin: 15px;
   cursor: pointer;
+  padding: 7px;
+  font-size: 12px;
 }
