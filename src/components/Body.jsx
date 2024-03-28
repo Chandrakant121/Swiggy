@@ -1,10 +1,8 @@
 import { useState } from "react"
-import { RestaurantCard } from "./RestorantCard"
+import RestaurantCard from "./RestorantCard"
 import lists from "../utils/mockData"
 
 const Body = () => {
-    // Super powerfull local state variable => useState hook 
-    // Lists is variable we can pass default value tothis variable => empty
     const [list, setLists] = useState(lists)
 
     const filterData = () => {
