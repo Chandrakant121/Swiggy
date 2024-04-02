@@ -27,23 +27,21 @@ const Body = () => {
         }
     }
 
-    if (resturantList.length === 0) {
-        return <Shimmer />
-    }
-
     return (
-        <div className='body'>
-            <div className="filter">
-                <button className="filter-btn" onClick={filterData}>Top Rated Resturant</button>
-            </div>
-            <div className="res-container">
-                {
-                    resturantList.map((restaurant) => {
-                        return <RestaurantCard key={restaurant.info.id} resData={restaurant} />
-                    })
-                }
-            </div>
-        </div >
+        resturantList.length === 0 ? (<Shimmer />) : (
+            <div className='body'>
+                <div className="filter">
+                    <button className="filter-btn" onClick={filterData}>Top Rated Resturant</button>
+                </div>
+                <div className="res-container">
+                    {
+                        resturantList.map((restaurant) => {
+                            return <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+                        })
+                    }
+                </div>
+            </div >
+        )
     )
 }
 
