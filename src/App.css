@@ -5,10 +5,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
   background-color: #202a36;
   color: white;
-  box-shadow: rgba(50, 46, 46, 0.35) 0px 5px 15px;
 }
 
 .logo {
@@ -48,16 +46,17 @@ body {
 .res-card {
   padding: 20px;
   width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 20px;
   cursor: pointer;
-  margin: 10px;
+  margin: 20px 14px;
   background-color: #202a36;
 }
 
 
 .res-card:hover {
-  background-color: #0d3863;
+  background-color: #263241;
+  transform: scale(1.1);
+  transition: transform .7s;
 }
 
 .search {
@@ -88,5 +87,28 @@ body {
 }
 
 .filter-btn:hover {
-  background-color: #0d3863;
+  background-color: #032240;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shimmer-card {
+  padding: 20px;
+  width: 200px;
+  height: 400px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 40px 14px;
+  margin-top: 90px;
+  background-color: #202a36;
+}
+
+.shimmer-logo {
+  width: 100%;
+  height: 50%;
+  background-color: #3d4854;
 }
