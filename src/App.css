@@ -86,8 +86,36 @@ body {
   color: white
 }
 
-.filter-btn {
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.search-btn {
   margin: 15px;
+  cursor: pointer;
+  padding: 12px;
+  width: 100px;
+  font-size: 12px;
+  background-color: #202a36;
+  color: white;
+  border: none;
+}
+
+.search-box {
+  padding: 7px;
+  width: 250px;
+  margin-right: 20px;
+}
+
+
+.search-btn:hover {
+  background-color: #032240;
+}
+
+
+.filter-btn {
+  margin: 25px;
   cursor: pointer;
   padding: 12px;
   font-size: 12px;
