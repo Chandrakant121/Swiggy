@@ -11,7 +11,7 @@ const Body = () => {
 
     const filterData = () => {
         const filteredList = resturantList.filter((res) => { return res.info.avgRating > 4 })
-        setresturantList(filteredList)
+        setFilteredResturant(filteredList)
     }
 
     const searchBtn = () => {
