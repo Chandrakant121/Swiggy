@@ -157,3 +157,45 @@ body {
   height: 50%;
   background-color: #3d4854;
 }
+
+
+/* RestaurantMenu */
+
+.menu {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.menuCard {
+  /* border: 3px solid rgb(252, 252, 252); */
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: white;
+  background-color: #202a36;
+}
+
+.recommended-menu {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px;
+  color: white;
+  background-color: #202a36;
+  margin-top: 30px;
+}
+
+.cuisines {
+  color: gold;
+  font-size: 18px;
+  border-bottom: 1px solid gold;
+}
+
+.menu-logo {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.menu-img-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

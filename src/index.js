@@ -8,6 +8,7 @@ import Body from './components/Body';
 import Header from './components/Header';
 import Contact from './components/Contact';
 import Error from './components/Error';
+import RestaurantMenu from './components/ResturantMenu';
 
 
 
@@ -37,6 +38,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/resturants/:resId',
+        element: <RestaurantMenu />,
       },
     ],
   },
