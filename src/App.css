@@ -200,3 +200,24 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+
+/* About us */
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us-container h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-us-container p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
