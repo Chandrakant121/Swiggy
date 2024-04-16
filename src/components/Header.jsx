@@ -1,10 +1,12 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { LOGO_URL } from "../utils/constatnts"
+import useOnlineStatus from "../utils/useOnlineStatus"
 
 const Header = () => {
 
     const [btnName, setBtnName] = useState("Login")
+    const status = useOnlineStatus()
 
 
     let changeBtn = () => {
@@ -18,10 +20,11 @@ const Header = () => {
             </div>
             <div className='nav-items'>
                 <ul>
-                    <li><Link className="Link" to="/">Home</Link></li>
-                    <li><Link className="Link" to="/about">About Us</Link></li>
-                    <li><Link className="Link" to="/contact">Contact Us</Link></li>
-                    <li><Link className="Link" to="/cart">Cart</Link></li>
+                    <li><Link className="link" to="">{status ? "" : "🔴"}</Link></li>
+                    <li><Link className="link" to="/">Home</Link></li>
+                    <li><Link className="link" to="/about">About Us</Link></li>
+                    <li><Link className="link" to="/contact">Contact Us</Link></li>
+                    <li><Link className="link" to="/cart">Cart</Link></li>
                     <li><button className="login" onClick={changeBtn}>{btnName}</button></li>
                 </ul>
             </div>
