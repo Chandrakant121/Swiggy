@@ -136,6 +136,13 @@ body {
   background-color: #032240;
 }
 
+.offline {
+  margin: auto;
+  width: 40%;
+  color: white;
+  padding: 150px;
+}
+
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;

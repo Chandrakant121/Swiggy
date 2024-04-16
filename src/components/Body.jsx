@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import RestaurantCard from "./RestorantCard"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router-dom"
+import useOnlineStatus from "../utils/useOnlineStatus"
 // import lists from "../utils/mockData"
 
 const Body = () => {
@@ -38,6 +39,13 @@ const Body = () => {
         catch (err) {
             console.log(err)
         }
+    }
+
+    const onlineStatus = useOnlineStatus()
+
+    if (onlineStatus == false) {
+        return (
+            <h1 className="offline">Looks like you are Offline !! Please check your internet connection</h1>)
     }
 
     return (
