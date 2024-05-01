@@ -228,3 +228,10 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+.openlabel {
+  position: absolute;
+  margin-left: 45px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}

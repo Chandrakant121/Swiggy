@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestorantCard"
+import RestaurantCard, { withopenLabel } from "./RestorantCard"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router-dom"
 import useOnlineStatus from "../utils/useOnlineStatus"
@@ -9,6 +9,8 @@ const Body = () => {
 
     const { resturantList, filteredResturant, filterData, searchBtn, searchText, SetsearchText } = useBodyResdata()
     const onlineStatus = useOnlineStatus()
+
+    const ResturantCardOpen = withopenLabel(RestaurantCard)
 
     if (onlineStatus == false) {
         return (
@@ -34,7 +36,14 @@ const Body = () => {
                 <div className="res-container">
                     {
                         filteredResturant.map((restaurant) => {
-                            return <Link className="link" key={restaurant.info.id} to={"/resturants/" + restaurant.info.id}><RestaurantCard resData={restaurant} /></Link>
+                            return <Link
+                                className="link" key={restaurant.info.id} to={"/resturants/" + restaurant.info.id}>
+                                {
+                                    restaurant?.info?.isOpen ? (
+                                        <ResturantCardOpen resData={restaurant} />) :
+                                        <RestaurantCard resData={restaurant} />
+                                }
+                            </Link>
                         })
                     }
                 </div>
