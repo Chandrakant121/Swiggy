@@ -12,8 +12,9 @@ const ItemList = ({ items }) => {
                         <span>{item.card.info.description}</span>
                     </div>
 
-                    <div>
+                    <div className="img-div">
                         <img className="item-logo" src={IMG_URL + item.card.info.imageId} alt="Not rendered" />
+                        <button className="add-btn">Add+</button>
                     </div>
                 </div>
             </div>)

@@ -267,3 +267,18 @@ body {
 .item-logo {
   width: 140px;
 }
+
+.img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-btn {
+  width: 60px;
+  height: 30px;
+  border-radius: 35px;
+  border: none;
+  font-weight: 500;
+  position: absolute;
+}
+
