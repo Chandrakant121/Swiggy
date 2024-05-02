@@ -2,24 +2,21 @@ import { useState } from "react"
 import ItemList from "./ItemList"
 
 
-const ResturantCategory = (props) => {
-
-    const [showItmes, setShowitms] = useState(false)
+const ResturantCategory = ({ data, showItems, setShowindex }) => {
 
     const handleClick = () => {
-        setShowitms(!showItmes)
+        setShowindex()
     }
 
-    let data = props.data.card.card
     return <div className="recommended-menu">
         {/* Header */}
         <div className="recommended-title" onClick={handleClick}>
-            <h2>{data.title}({data.itemCards.length})</h2>
+            <h3>{data.card?.card?.title}({data.card.card.itemCards.length})</h3>
             <div>⬇️</div>
         </div>
 
         {/* Body */}
-        {showItmes && <ItemList items={props.data.card.card.itemCards} />}
+        {showItems && <ItemList items={data.card.card.itemCards} />}
 
     </div>
 }

@@ -242,9 +242,16 @@ body {
 
 .openlabel {
   position: absolute;
-  margin-left: 45px;
+  margin-left: 38px;
+  margin-top: 25px;
   padding-bottom: 15px;
-  font-size: 14px;
+  font-size: 16px;
+  color: aliceblue;;
+  background-color: black;
+  width: 60px;
+  text-align: center;
+  height: 10px;
+  border-radius: 20px;
 }
 
 /* itemlist */
@@ -262,10 +269,6 @@ body {
 .recommended-item>div>span {
   font-size: 16px;
   color: rgb(231, 221, 221);
-}
-
-.recommended-item>div>h2 {
-  color: gold;
 }
 
 .item-logo {
