@@ -12,7 +12,7 @@ const Body = () => {
 
     const ResturantCardOpen = withopenLabel(RestaurantCard)
 
-    if (onlineStatus == false) {
+    if (onlineStatus === false) {
         return (
             <h1 className="offline">Looks like you are Offline !! Please check your internet connection</h1>)
     }

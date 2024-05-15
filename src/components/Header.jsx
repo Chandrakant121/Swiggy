@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { LOGO_URL } from "../utils/constatnts"
 import useOnlineStatus from "../utils/useOnlineStatus"
+import { useSelector } from "react-redux"
 
 const Header = () => {
 
@@ -12,6 +13,9 @@ const Header = () => {
     let changeBtn = () => {
         btnName === "Login" ? setBtnName("Logout") : setBtnName("Login")
     }
+
+    // subscribing to store using Selector 
+    const cartItems = useSelector((store) => store.cart.items)
 
     return (
         <div className='header'>
@@ -24,7 +28,7 @@ const Header = () => {
                     <li><Link className="link" to="/">Home</Link></li>
                     <li><Link className="link" to="/about">About Us</Link></li>
                     <li><Link className="link" to="/contact">Contact Us</Link></li>
-                    <li><Link className="link" to="/cart">Cart</Link></li>
+                    <li><Link className="link" to="/cart">Cart {cartItems.length}</Link></li>
                     <li><button className="login" onClick={changeBtn}>{btnName}</button></li>
                 </ul>
             </div>

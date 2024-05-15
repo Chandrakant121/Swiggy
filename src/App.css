@@ -246,7 +246,8 @@ body {
   margin-top: 25px;
   padding-bottom: 15px;
   font-size: 16px;
-  color: aliceblue;;
+  color: aliceblue;
+  ;
   background-color: black;
   width: 60px;
   text-align: center;
@@ -287,4 +288,45 @@ body {
   border: none;
   font-weight: 500;
   position: absolute;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.cart {
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-container>h1 {
+  color: rgb(255, 255, 255);
+}
+
+.clear-btn {
+  margin: 15px;
+  cursor: pointer;
+  padding: 12px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #202a36;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.clear-btn:hover {
+  background-color: rgb(146, 135, 135);
 }
