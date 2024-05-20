@@ -7,6 +7,9 @@ body {
   justify-content: space-between;
   background-color: #202a36;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -245,7 +248,8 @@ body {
   margin-left: 38px;
   margin-top: 25px;
   padding-bottom: 15px;
-  font-size: 16px;
+  font-size: 14px;
+  padding-top: 5px;
   color: aliceblue;
   ;
   background-color: black;
